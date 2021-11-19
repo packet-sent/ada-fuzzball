@@ -1,0 +1,123 @@
+/* Part of my CSS was taken from my own sites https://speedproxies.net/ https://packetsent.dev/ */
+
+body {
+	padding: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 0px;
+	background-color: #CFD8DC;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+  background-color: #1c2836;
+}
+
+.game-container {
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+
+.btn {
+  background-color: #2a3d53;
+  font-weight: bold;
+  line-height: 1.5;
+  display: inline-block;
+  width: 131px;
+  height: 46px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: middle;
+  color: #c0ccda;
+  border: 1px solid transparent;
+  border-radius: .375rem;
+  margin-bottom: 1rem;
+}
+
+.row-grid {
+  display: flex;
+  margin-right: -15px;
+  margin-left: -15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  border-radius: .75rem;
+  width: 300px;
+  height: 350px;
+  background-color: #253649;
+  background-clip: border-box;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%)
+}
+
+.instructions-card {
+  font-family: Tahoma, sans-serif;
+  color: #c0ccda;
+  min-width: 0;
+  word-wrap: break-word;
+  border-radius: .75rem;
+  width: 460px;
+  background-color: #253649;
+  background-clip: border-box;
+  margin-bottom: 1.5rem;
+  position: relative;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  margin-top: 1.5rem;
+}
+
+.instructions-card-header {
+  margin-top: 1rem;
+  text-align: center;
+  font-family: Tahoma, sans-serif;
+  font-weight: 400;
+  font-size: 2rem;
+  color: #c0ccda;
+}
+
+.score {
+  font-family: Tahoma, sans-serif;
+  font-weight: 700 !important;
+  color: #c0ccda;
+}
+
+.game-score-announcement {
+  position: absolute;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%,-30%);
+  z-index:0;
+  opacity: 0;
+  font-family: Tahoma, sans-serif;
+  color: white;
+}
+
+h5 {
+  font-family: Tahoma, sans-serif;
+  font-size: 1.25rem;
+}
+
+@keyframes game-score-announce-anim {
+  0%{
+    display: block;
+    transform: translate(-50%,-25%);
+    opacity: 1;
+  }
+  50%{
+    opacity: 0.5;
+  }
+  100%{
+    transform: translate(-50%,-50%);
+    opacity: 0;
+  }
+}

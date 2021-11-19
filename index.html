@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Ada Fuzzball</title>
+		<link rel="preconnect" href="https://cdnjs.cloudflare.com">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.min.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.js" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.17.1/matter.min.js" crossorigin="anonymous"></script>
+		<script src="gameClasses.js"></script>
+		<script src="gameScript.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div id="game-viewport" class="game-container">
+        <!-- Score Overlay -->
+			  <div id="game-score-container"></div>
+        <!-- Menu Overlay -->
+		  	<div id="menu" class="card">
+          <!-- Menu Spacing -->
+          <p></p>
+          <button onclick="start()" class="btn">Start Game</button></br>
+          <button onclick="restart()" class="btn">Restart</button></br>
+          <button onclick="closeMenu()" class="btn">Close menu</button></br>
+          <h5 id="score" class="score"></h5>
+        </div>
+				<!-- Game Engine -->
+			</div>
+      <div class="row-grid">
+        <div class="instructions-card">
+          <div class="instructions-card-header">Controls</div>
+          <ul>
+            <li>Press ESC to pause</li>
+            <li>Click Start to start a new game</li>
+            <li>Click Restart to restart the current level</li>
+            <li>Drag mouse and release to launch fuzzball</li>
+          </ul>
+        </div>
+        <div class="instructions-card">  
+          <div class="instructions-card-header">Instructions</div>
+          <ul>    
+            <li>Hit crates to get points</li>
+            <li>Hit present to get superfuzz</li>
+            <li>Destroy all crates to win</li>
+            <li>You lose if you run out of Fuzz Balls</li>
+          </ul>
+        </div>
+      </div>
+		</div>
+	</body>
+</html>
